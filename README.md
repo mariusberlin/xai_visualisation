@@ -33,8 +33,8 @@ foobar.singularize('phenomena') # returns 'phenomenon'
 
 ## Examples
 
-<img src="https://user-images.githubusercontent.com/51263484/112847968-e290a300-90a7-11eb-840b-3dd4f307e55c.JPG" width="1000" height="1000"> 
-<img src="https://user-images.githubusercontent.com/51263484/112847976-e3c1d000-90a7-11eb-909f-e7f89222335f.JPG" width="1000" height="1000"> 
+<img src="https://user-images.githubusercontent.com/51263484/112847968-e290a300-90a7-11eb-840b-3dd4f307e55c.JPG" width="500" height="500"> 
+<img src="https://user-images.githubusercontent.com/51263484/112847976-e3c1d000-90a7-11eb-909f-e7f89222335f.JPG" width="700" height="700"> 
 
 
 
