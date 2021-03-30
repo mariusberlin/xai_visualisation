@@ -9,13 +9,12 @@ Interpretablity methods derived from https://github.com/keisen/tf-keras-vis
 ## Requirements
 
 ```
-
 Python 3.8
 TensorFlow 2.2.0
 Keras 2.4.3
 tf-keras-vis 0.5.5
 ipywidgets 5.3.4
-
+```
 
 ## Installation
 
