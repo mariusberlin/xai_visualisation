@@ -31,6 +31,8 @@ import foobar
 foobar.pluralize('word') # returns 'words'
 foobar.pluralize('goose') # returns 'geese'
 foobar.singularize('phenomena') # returns 'phenomenon'
+
+#The calculation of the saliency maps can take up to 10 minutes depending on your GPU.
 ```
 
 ## Examples
