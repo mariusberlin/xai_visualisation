@@ -1,4 +1,5 @@
 
+
 # XAI visualisation
 
 Visualisaton of interpretability methods of 3D MRI images in Jupyter Notebook for Tensorflow
@@ -36,6 +37,13 @@ foobar.singularize('phenomena') # returns 'phenomenon'
 
 <img src="https://user-images.githubusercontent.com/51263484/112940011-cbe05f80-912c-11eb-97bd-7e776e645b65.png" width="500" height="370"> 
 <img src="https://user-images.githubusercontent.com/51263484/112939970-b4a17200-912c-11eb-9c5b-ac51e0dfef12.png" width="500" height="370"> 
+
+
+
+<img src="https://user-images.githubusercontent.com/51263484/112940219-21b50780-912d-11eb-9598-33320a128dcb.jpg" width="500" height="370"> 
+<img src="https://user-images.githubusercontent.com/51263484/112940218-211c7100-912d-11eb-9beb-bd928ecb7dc7.png" width="500" height="370"> 
+
+
 
 
 
