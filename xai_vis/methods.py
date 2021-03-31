@@ -8,7 +8,7 @@ import numpy as np
 
 '''
 Call the interpretablity methods
-Derived from: https://github.com/keisen/tf-keras-vis/blob/master/examples/attentions.ipynb
+Interpretability methods are from: https://github.com/keisen/tf-keras-vis/blob/master/examples/attentions.ipynb
 '''
 
 '''
