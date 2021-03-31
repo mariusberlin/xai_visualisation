@@ -20,7 +20,7 @@ ipywidgets 5.3.4
 
 
 ```bash
-pip install foobar
+pip install git+https://github.com/mariusberlin/xai_visualisation
 ```
 
 ## Usage
