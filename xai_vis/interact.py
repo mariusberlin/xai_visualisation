@@ -7,6 +7,7 @@ from matplotlib import pyplot as plt
 from IPython.display import clear_output
 import xai_vis.methods
 import xai_vis.utils
+import numpy as np
 
 '''
 Jupyter notebook visualisation
