@@ -6,7 +6,7 @@ from ipywidgets import interact, interactive, IntSlider, ToggleButtons
 from matplotlib import pyplot as plt
 from IPython.display import clear_output
 import xai_vis.methods as methods
-import xai_vis.utils as utils
+from xai_vis.utils import last_dense_layer,last_conv_layer,loss,model_modifier
 import numpy as np
 
 '''
