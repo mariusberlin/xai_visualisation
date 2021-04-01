@@ -12,21 +12,22 @@ import xai_vis.utils
 Jupyter notebook visualisation
 '''
 
-def vis(model_var,pixel_array):
+def vis(model,trained_model,pixel_array):
     
     #if path is provided as model load model
-    if type(model_var) == str:
-        model_path = model_var
-        
+    if type(trained_model) == str:
+        model_path = trained_model
         #load model
         trained_model = tf.keras.models.load_model(model_path, compile=False)
-        #get weights
-        loaded_weights = trained_model.get_weights()
-        #new_model.summary()
-        model.set_weights(loaded_weights)
-    
     else:
         pass
+    
+    #get weights
+    loaded_weights = trained_model.get_weights()
+    #new_model.summary()
+    model.set_weights(loaded_weights)
+
+    
     
     #transform pixel array from (depth,length,width) to (1,depth,length,width,1)
     if len(np.shape(pixel_array)) == 3:
