@@ -10,7 +10,7 @@ setup(
     packages=['xai_vis'],
    python_requires='>=3.6, <3.9',
     # Needed for dependencies
-    install_requires=['numpy', 'ipywidgets'],
+    install_requires=['numpy'],
  
     # *strongly* suggested for sharing
     version='1.0',
