@@ -15,7 +15,7 @@ Jupyter notebook visualisation
 def vis(model_var,pixel_array):
     
     #if path is provided as model load model
-    if type(model) == str:
+    if type(model_var) == str:
         model_path = model_var
         
         #load model
