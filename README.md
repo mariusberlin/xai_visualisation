@@ -43,7 +43,7 @@ interact.vis(model,model_path,pixel_array)
 ```
 
 ## Example
-
+```python
 import xai_vis.interact as interact
 from vgg16_final import vgg16_model
 from image_utils import resize
@@ -58,6 +58,7 @@ imagedata = np.load(image_path, allow_pickle=True)
 pixel_array = resize(imagedata['pixel_array'])
 
 interact.vis(model,model_path,pixel_array)
+```
 
 <img src="https://user-images.githubusercontent.com/51263484/112940011-cbe05f80-912c-11eb-97bd-7e776e645b65.png" width="500" height="360"> 
 <img src="https://user-images.githubusercontent.com/51263484/112939970-b4a17200-912c-11eb-9c5b-ac51e0dfef12.png" width="500" height="360"> 
