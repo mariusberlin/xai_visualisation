@@ -37,14 +37,14 @@ def vis(model,trained_model,pixel_array):
 
     #call the interpretability methods
     print("Calculating the saliency maps. This may take several minutes.")
-    capi_vsali = call_vsaliency(model,model_modifier,loss,pixel_array)
-    capi_sali = call_smooth(model,model_modifier,loss,pixel_array)
-    capi_grad = call_grad(model,model_modifier,loss,pixel_array)
-    capi_gradplus = call_gradplus(model,model_modifier,loss,pixel_array)
-    capi_faster_scorecam = call_faster_scorecam(model, model_modifier,loss,pixel_array)
+    capi_vsali = methods.call_vsaliency(model,model_modifier,loss,pixel_array)
+    capi_sali = methods.call_smooth(model,model_modifier,loss,pixel_array)
+    capi_grad = methods.call_grad(model,model_modifier,loss,pixel_array)
+    capi_gradplus = methods.call_gradplus(model,model_modifier,loss,pixel_array)
+    capi_faster_scorecam = methods.call_faster_scorecam(model, model_modifier,loss,pixel_array)
 
 
-    #clear pritn statement
+    #clear print statement
     clear_output(wait=True)
 
     #define the widgets
@@ -109,19 +109,19 @@ def vis(model,trained_model,pixel_array):
         
         #load interpretability method
         if method == 'Vanilla Saliency' :
-            heatmap = mode(attention_mode, capi_vsali)
+            heatmap = utils.mode(attention_mode, capi_vsali)
             capi = capi_vsali
         elif method == 'SmoothGrad' :
-            heatmap = mode(attention_mode, capi_sali)
+            heatmap = utils.mode(attention_mode, capi_sali)
             capi = capi_sali
         elif method == 'GradCam' :
-            heatmap = mode(attention_mode, capi_grad)
+            heatmap = utils.mode(attention_mode, capi_grad)
             capi = capi_grad
         elif method == 'GradCam++' :
-            heatmap = mode(attention_mode, capi_gradplus)
+            heatmap = utils.mode(attention_mode, capi_gradplus)
             capi = capi_gradplus
         elif method == 'ScoreCam' :
-            heatmap = mode(attention_mode, capi_faster_scorecam)
+            heatmap = utils.mode(attention_mode, capi_faster_scorecam)
             capi = capi_faster_scorecam
 
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
