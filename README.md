@@ -58,7 +58,7 @@ model_path = "./storage/trained_models/t2_flair/vgg16_dummy.hdf5" #hdf5 format
 
 image_path = "./storage/processed_data/3Dmri_dummy.npz"
 imagedata = np.load(image_path, allow_pickle=True)
-pixel_array = resize(imagedata['pixel_array']) #shape = (30, 128, 128)
+pixel_array = resize(imagedata) #output shape = (30, 128, 128)
 
 
 interact.vis(model,model_path,pixel_array)
