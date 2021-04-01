@@ -40,7 +40,7 @@ import xai_vis.interact as interact
 interact.vis(model,model_path,pixel_array)
 
 
-#The calculation of the saliency maps can take up to 10 minutes depending on your GPU.
+#The calculation of the saliency maps may take up to 10 minutes depending on your GPU.
 
 
 ```
