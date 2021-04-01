@@ -1,6 +1,6 @@
 
 
-# XAI visualisation 
+# 3D XAI visualisation 
 
 Visualisation of 3D interpretability methods in Jupyter Notebook for Tensorflow e.g. on 3D MR images.
 
