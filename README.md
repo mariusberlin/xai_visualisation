@@ -1,10 +1,10 @@
 
 
-# XAI visualisation
+# XAI visualisation 
 
-Visualisaton of 3D interpretability methods in Jupyter Notebook for Tensorflow e.g. on 3D MR images
+Visualisation of 3D interpretability methods in Jupyter Notebook for Tensorflow e.g. on 3D MR images
 
-The interpretablity methods are derived from https://github.com/keisen/tf-keras-vis
+The interpretability methods are derived from https://github.com/keisen/tf-keras-vis
 
 
 ## Requirements
@@ -30,9 +30,9 @@ pip install git+https://github.com/mariusberlin/xai_visualisation
 '''
 Provide model, trained model and pixel array in a Jupyter Notebook
 
-Provide model and trained model with identical architecture
+Provide model and trained model with identical architecture.
 Provide 3D pixel_array as numpy array in the same shape as the input size of the 3D model.
-Pixel_array dimensions: (depth, length, width) or (1,depth, length, width,1); depth = dimension of interactive slider
+Pixel_array dimensions: (depth, length, width) or (1, depth, length, width,1); depth = dimension of interactive slider.
 '''
 
 import xai_vis.interact as interact
@@ -66,18 +66,3 @@ interact.vis(model,model_path,pixel_array)
 
 <img src="https://user-images.githubusercontent.com/51263484/112940011-cbe05f80-912c-11eb-97bd-7e776e645b65.png" width="500" height="360"> 
 <img src="https://user-images.githubusercontent.com/51263484/112939970-b4a17200-912c-11eb-9c5b-ac51e0dfef12.png" width="500" height="360"> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
