@@ -54,9 +54,10 @@ model = vgg16_model((30, 128, 128,1), 64, 2, 0.2, 2)
 
 model_path = "./storage/trained_models/t2_flair/vgg16_dummy.hdf5"
 
-image_path = "./storage/processed_data/dummy_mrt.npz"
+image_path = "./storage/processed_data/3Dmri_dummy.npz"
 imagedata = np.load(image_path, allow_pickle=True)
 pixel_array = resize(imagedata['pixel_array'])
+
 
 interact.vis(model,model_path,pixel_array)
 ```
