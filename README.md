@@ -6,6 +6,7 @@ Visualisaton of interpretability methods of 3D MRI images in Jupyter Notebook fo
 
 Interpretablity methods derived from https://github.com/keisen/tf-keras-vis
 
+
 ## Requirements
 
 ```
@@ -25,7 +26,6 @@ pip install git+https://github.com/mariusberlin/xai_visualisation
 ## Usage
 
 ```python
-#The calculation of the saliency maps can take up to 10 minutes depending on your GPU.
 #Provide model, trained model and pixel array in a Jupyter Notebook
 #provided model and trained model with identical architecture
 #provide 3D pixel_array as numpy array in the same shape as the input size of the 3D model
@@ -37,9 +37,27 @@ import xai_vis.interact as interact
 interact.vis(model,model_path,pixel_array)
 
 
+#The calculation of the saliency maps can take up to 10 minutes depending on your GPU.
+
+
 ```
 
-## Examples
+## Example
+
+import xai_vis.interact as interact
+from vgg16_final import vgg16_model
+from image_utils import resize
+
+
+model = vgg16_model((30, 128, 128,1), 64, 2, 0.2, 2)
+
+model_path = "./storage/trained_models/t2_flair/vgg16_dummy.hdf5"
+
+image_path = "./storage/processed_data/dummy_mrt.npz"
+imagedata = np.load(image_path, allow_pickle=True)
+pixel_array = resize(imagedata['pixel_array'])
+
+interact.vis(model,model_path,pixel_array)
 
 <img src="https://user-images.githubusercontent.com/51263484/112940011-cbe05f80-912c-11eb-97bd-7e776e645b65.png" width="500" height="360"> 
 <img src="https://user-images.githubusercontent.com/51263484/112939970-b4a17200-912c-11eb-9c5b-ac51e0dfef12.png" width="500" height="360"> 
