@@ -7,6 +7,7 @@ from matplotlib import pyplot as plt
 from IPython.display import clear_output
 import xai_vis.methods
 import xai_vis.utils
+from utils import last_dense_layer,last_conv_layer,loss,model_modifier
 import numpy as np
 
 '''
