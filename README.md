@@ -2,9 +2,9 @@
 
 # XAI visualisation 
 
-Visualisation of 3D interpretability methods in Jupyter Notebook for Tensorflow e.g. on 3D MR images
+Visualisation of 3D interpretability methods in Jupyter Notebook for Tensorflow e.g. on 3D MR images.
 
-The interpretability methods are derived from https://github.com/keisen/tf-keras-vis
+The interpretability methods are derived from https://github.com/keisen/tf-keras-vis.
 
 
 ## Requirements
@@ -28,7 +28,7 @@ pip install git+https://github.com/mariusberlin/xai_visualisation
 
 ```python
 '''
-Provide model, trained model and pixel array in a Jupyter Notebook
+Provide model, trained model and pixel array in a Jupyter Notebook.
 
 Provide model and trained model with identical architecture.
 Provide 3D pixel_array as numpy array in the same shape as the input size of the 3D model.
