@@ -5,8 +5,8 @@ import ipywidgets as widgets
 from ipywidgets import interact, interactive, IntSlider, ToggleButtons
 from matplotlib import pyplot as plt
 from IPython.display import clear_output
-import methods.py
-import utils.py
+import methods
+import utils
 
 '''
 Jupyter notebook visualisation
