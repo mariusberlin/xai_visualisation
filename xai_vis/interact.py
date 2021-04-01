@@ -6,7 +6,7 @@ from ipywidgets import interact, interactive, IntSlider, ToggleButtons
 from matplotlib import pyplot as plt
 from IPython.display import clear_output
 import xai_vis.methods as methods
-from xai_vis.utils import last_dense_layer,last_conv_layer,loss,model_modifier
+from xai_vis.utils import last_dense_layer,last_conv_layer,loss,model_modifier, mode
 import numpy as np
 
 '''
@@ -109,19 +109,19 @@ def vis(model,trained_model,pixel_array):
         
         #load interpretability method
         if method == 'Vanilla Saliency' :
-            heatmap = utils.mode(attention_mode, capi_vsali)
+            heatmap = mode(attention_mode, capi_vsali)
             capi = capi_vsali
         elif method == 'SmoothGrad' :
-            heatmap = utils.mode(attention_mode, capi_sali)
+            heatmap = mode(attention_mode, capi_sali)
             capi = capi_sali
         elif method == 'GradCam' :
-            heatmap = utils.mode(attention_mode, capi_grad)
+            heatmap = mode(attention_mode, capi_grad)
             capi = capi_grad
         elif method == 'GradCam++' :
-            heatmap = utils.mode(attention_mode, capi_gradplus)
+            heatmap = mode(attention_mode, capi_gradplus)
             capi = capi_gradplus
         elif method == 'ScoreCam' :
-            heatmap = utils.mode(attention_mode, capi_faster_scorecam)
+            heatmap = mode(attention_mode, capi_faster_scorecam)
             capi = capi_faster_scorecam
 
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
