@@ -2,9 +2,9 @@
 
 # XAI visualisation
 
-Visualisaton of interpretability methods of 3D MRI images in Jupyter Notebook for Tensorflow
+Visualisaton of 3D interpretability methods in Jupyter Notebook for Tensorflow e.g. on 3D MR images
 
-Interpretablity methods derived from https://github.com/keisen/tf-keras-vis
+The interpretablity methods are derived from https://github.com/keisen/tf-keras-vis
 
 
 ## Requirements
@@ -50,13 +50,13 @@ from vgg16_final import vgg16_model
 from image_utils import resize
 
 
-model = vgg16_model((30, 128, 128,1), 64, 2, 0.2, 2)
+model = vgg16_model((30, 128, 128,1), 64, 2, 0.2, 2) #tensorflow model
 
-model_path = "./storage/trained_models/t2_flair/vgg16_dummy.hdf5"
+model_path = "./storage/trained_models/t2_flair/vgg16_dummy.hdf5" #hdf5 format neccessary
 
 image_path = "./storage/processed_data/3Dmri_dummy.npz"
 imagedata = np.load(image_path, allow_pickle=True)
-pixel_array = resize(imagedata['pixel_array'])
+pixel_array = resize(imagedata['pixel_array']) #shape = (30, 128, 128)
 
 
 interact.vis(model,model_path,pixel_array)
