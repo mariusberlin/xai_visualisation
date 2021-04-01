@@ -5,7 +5,7 @@ from tensorflow.keras import backend as K
 from tf_keras_vis.utils import normalize
 from tf_keras_vis.gradcam import Gradcam
 import numpy as np
-from utils import last_dense_layer,last_conv_layer,loss,model_modifier
+from xai.utils import last_dense_layer,last_conv_layer,loss,model_modifier
 '''
 Call the interpretablity methods
 Interpretability methods are from: https://github.com/keisen/tf-keras-vis/blob/master/examples/attentions.ipynb
