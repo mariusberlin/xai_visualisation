@@ -26,11 +26,12 @@ pip install git+https://github.com/mariusberlin/xai_visualisation
 ## Usage
 
 ```python
-#Provide model, trained model and pixel array in a Jupyter Notebook
-#provided model and trained model with identical architecture
-#provide 3D pixel_array as numpy array in the same shape as the input size of the 3D model
-#pixel_array dimensions: (depth, length, width) or (1,depth, length, width,1); depth = dimension of interactive slider
+'''
+Provide model, trained model and pixel array in a Jupyter Notebook
 
+Provide model and trained model with identical architecture
+Provide 3D pixel_array as numpy array in the same shape as the input size of the 3D model. Pixel_array dimensions: (depth, length, width) or (1,depth, length, width,1); depth = dimension of interactive slider
+'''
 
 import xai_vis.interact as interact
 
