@@ -1,3 +1,6 @@
+import tensorflow as tf
+import numpy as np
+
 # Find last dense layer
 def last_dense_layer(model ):
     for layer in reversed(model.layers ):
