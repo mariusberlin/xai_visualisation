@@ -10,9 +10,9 @@ The interpretability methods are derived from https://github.com/keisen/tf-keras
 ## Requirements
 
 ```
-Python 3.8
-TensorFlow 2.2.0
-Keras 2.4.3
+python 3.8
+tensorflow 2.2.0
+keras 2.4.3
 tf-keras-vis 0.5.5
 ipywidgets 7.5.1
 ```
