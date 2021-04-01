@@ -27,23 +27,14 @@ pip install git+https://github.com/mariusberlin/xai_visualisation
 ```python
 #The calculation of the saliency maps can take up to 10 minutes depending on your GPU.
 #Provide model, trained model and pixel array in a Jupyter Notebook
+#provided model and trained model with identical architecture
+#provide 3D pixel_array as numpy array in the same shape as the input size of the 3D model
+#pixel_array dimensions: (depth, length, width) or (1,depth, length, width,1); depth = dimension of interactive slider
 
-import xai_vis.utils
-import xai_vis.methods
+
 import xai_vis.interact as interact
 
-
-#your model architecture
-model = vgg16_model((30, 128, 128,1), 64, 2, 0.2, 2)
-
-#path to trained model
-path_name = "./storage/trained_models/t2_flair/2021-02-12 22:06:02_final_augm0.7_dim_(30, 128, 128)_lr_decay_plateau_npz_axt2flair_vgg16_final_adam_reg_0_dropout_0.4_lr_0001_val_loss.hdf5"
-
-or
-#trained model
-#path_name = trained_model
-
-xai_vis.interact.vis(model,model_path,pixel_array)
+interact.vis(model,model_path,pixel_array)
 
 
 ```
